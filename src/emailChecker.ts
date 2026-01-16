@@ -3,7 +3,11 @@ function isValidEmail(string : string){
         return false;
     }
 
-    if(string.endsWith(".")){
+    if(!string.includes('.') || string.endsWith(".")){
+        return false;
+    }
+
+    if(string.includes(' ')){
         return false;
     }
 
