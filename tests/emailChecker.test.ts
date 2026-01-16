@@ -5,7 +5,10 @@ test("email contains @ character", () => {
   expect(isValidEmail(email)).toBe(true);
 });
 
-
+test("email contains . character but not at last char", () => {
+    const email = "will.gijsen@vinci.com.";
+    expect(isValidEmail(email)).toBe(false);
+});
 
 /**
  * a. Il doit contenir au moins un @
