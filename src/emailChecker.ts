@@ -11,6 +11,10 @@ function isValidEmail(string : string){
         return false;
     }
 
+    if(string[0] === "@"){
+        return false;
+    }
+
     return true;
 }
 
