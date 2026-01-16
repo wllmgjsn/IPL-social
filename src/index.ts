@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.use(express.json());
 
@@ -10,7 +10,7 @@ app.get('/', (_req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Serveur lancé sur http://localhost:${port}`);
+  console.log(`Serveur lancé sur http://localhost:${8080}`);
 });
 
 export default app;
