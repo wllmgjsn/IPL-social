@@ -1,10 +1,9 @@
 function isValidEmail(string : string){
-    for(let i = 0; i < string.length; i++){
-        if(string[i] === '@'){
-            return true;
-        }
+    if(!string.includes("@")){
+        return false;
     }
-    return false;
+
+    return true;
 }
 
 export default isValidEmail;

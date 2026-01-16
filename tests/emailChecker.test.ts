@@ -5,6 +5,8 @@ test("email contains @ character", () => {
   expect(isValidEmail(email)).toBe(true);
 });
 
+
+
 /**
  * a. Il doit contenir au moins un @
 b. Il doit contenir au moins un point dans le nom de domaine (et pas le dernier caractère
