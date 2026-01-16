@@ -11,7 +11,7 @@ function isValidEmail(string : string){
         return false;
     }
 
-    if(string[0] === "@"){
+    if(string.startsWith("@") || string.endsWith("@")){
         return false;
     }
 
