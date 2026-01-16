@@ -2,7 +2,7 @@ import isValidEmail from "../src/emailChecker";
 
 test("email contains @ character", () => {
   const email = "will@test.com";
-  expect(isValidEmail(email)).toBe(false);
+  expect(isValidEmail(email)).toBe(true);
 });
 
 /**
